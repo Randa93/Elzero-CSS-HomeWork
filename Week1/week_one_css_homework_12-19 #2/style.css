@@ -1,0 +1,20 @@
+.parent2 div {
+    width: 400px;
+    background-color: #eee;
+    margin: 20px;
+    padding: 20px;
+}
+
+.one {
+    border-left: 10px solid #e91e63;
+    outline: 10px solid #eee;
+}
+
+.two {
+    visibility: hidden;
+}
+
+.three {
+    border-left: 10px solid #03a9f4;
+    outline: 10px solid #eee;
+}
