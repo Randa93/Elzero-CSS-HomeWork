@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+  }
+  body {
+    height: 100vh;
+    place-content: center;
+  }
+  div {
+    width: 400px;
+    margin: 10px;
+    background-color: rgb(238 238 238);
+    padding: 23px;
+  }
+  div:last-of-type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

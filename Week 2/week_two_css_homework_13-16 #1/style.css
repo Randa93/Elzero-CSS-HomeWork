@@ -1,0 +1,29 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    
+    place-content: center;
+  } */
+.parent .child .title {
+    color: red;
+}
+.parent .title {
+    color: blue;
+}
+/* 
+.parent p {
+    color: green;
+}
+.title {
+    color: green;
+} 
+*/
+/* or : جمع الألوان المتشابهه مع بعضها */
+.parent p,
+.title {
+    color: green;
+}

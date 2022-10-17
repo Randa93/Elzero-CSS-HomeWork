@@ -1,0 +1,8 @@
+.title p {
+    font-size: 110px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #ff0000,
+                4px 4px 0 #00bbff,
+                6px 6px 0 #8646c5;
+}
