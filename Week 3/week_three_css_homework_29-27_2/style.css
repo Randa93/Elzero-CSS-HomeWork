@@ -1,0 +1,18 @@
+div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(194, 184, 184); /* Get The Background From Image */
+    color: black;
+}
+.one {
+    background-color: rgba(194, 183, 183, 0.1); /* Get The Background From Image */
+    color: black;
+}
+.two {
+    background-color: rgba(194, 183, 183, 0.1); /* Get The Background From Image */
+    opacity: 0.1; 
+    color: black;
+}

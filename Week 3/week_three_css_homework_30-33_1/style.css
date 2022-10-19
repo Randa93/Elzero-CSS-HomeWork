@@ -1,0 +1,64 @@
+/* My Solution */
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+    margin: 20px 0 0 20px;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position:absolute;
+    z-index: 2;
+    margin: 20px 0 0 40px;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+    margin: 40px 0 0 60px;
+}
+
+.black{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    margin: -80px 0 0 20px; 
+}
+/* K.Mesbah Solution: */
+div {
+    padding: 50px;
+    position: absolute;
+  }
+  .green {
+    background: #009688;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+  }
+  .red {
+    background: #f44336;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+  }
+  .blue {
+    background: #03a9f4;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
+  .black {
+    background: #333;
+    top: 40px;
+    left: 20px;
+    z-index: 1;
+  }
+  

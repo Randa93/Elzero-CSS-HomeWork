@@ -1,0 +1,153 @@
+ /* My Solution */
+ /* div{
+    width: 400px;
+    margin: 25px auto;
+    background-color: rgb(218, 214, 214);
+    padding: 25px;
+    line-height: 30px;
+    font-size: large;
+    position: relative;
+    border-top: 4px solid rgb(243, 77, 17);
+    border-bottom: 4px solid orangered;
+    border-right: 4px solid #0095ff;
+    border-left: 4px solid #0095ff;
+}
+.top-left{
+background-color: #0095ff;
+top:-15px;
+left: -15px;
+width: 40px;
+color: white;
+position: absolute;
+text-align: center;
+z-index: 1;
+display: block;
+border-right: 4px solid orangered;
+}
+.bottom-left{
+    background-color: #0095ff;
+    width: 40px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    display: block;
+    bottom: -15px;
+    left: -15px;
+    border-right: 4px solid orangered; 
+}
+.top-right {
+    background-color: #0095ff;
+    width: 40px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    display: block;
+    top: -15px;
+    right: -15px;
+    border-left: 4px solid orangered; 
+}
+.bottom-right {
+    background-color: #0095ff;
+width: 40px;
+color: white;
+position: absolute;
+text-align: center;
+z-index: 4;
+display: block;
+bottom: -15px;
+right: -15px;
+border-left: 4px solid orangered; 
+}  */
+
+/* @zineddine-ch */
+
+div {
+    background-color: #EEEEEE;
+    width: 400px;
+    margin: 40px auto;
+    font-size: 20px;
+    padding: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F44336 #03A9F4;
+    position: relative;
+}
+div span {
+    display: block;
+    width: 30px;
+    background-color: #03A9F4;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+.top-left,
+.bottom-left { /* 1+2 */
+    border-right: 2px solid #F44336;
+}
+.top-right,
+.bottom-right { /* 3+4 */
+    border-left: 2px solid #F44336;
+}
+.top-left { /* 1 */
+    top: -13px;
+    left: -17px;
+}
+.bottom-left { /* 2 */
+    bottom: -12px;
+    left: -17px;
+}
+.top-right { /* 3 */
+    top: -13px;
+    right: -17px;
+}
+.bottom-right { /* 4 */
+    bottom: -12px;
+    right: -17px;
+}
+
+/* K.Mesbah */
+div {
+    position: relative;
+    margin: 300px auto;
+    width: 440px;
+    padding: 20px;
+    background: #eee;
+    border:3px solid;
+    border-color:#f27269#2196f3;
+    box-sizing: border-box;
+    font: 600 14px/30px sans-serif;
+    text-align: center;
+  }
+  span {
+    box-sizing: border-box;
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #2196f3;
+    color: #fff;
+  }
+  .top-left {
+    top: -14.5px;
+    left: -17.5px;
+    border-right: 3px solid#f27269;
+  }
+  .bottom-left {
+    bottom: -14.5px;
+    left: -17.5px;
+    border-right: 3px solid#f27269;
+  }
+  .top-right {
+    top: -14.5px;
+    right: -17.5px;
+    border-left: 3px solid#f27269;
+  }
+  .bottom-right {
+    bottom: -14.5px;
+    right: -17.5px;
+    border-left: 3px solid#f27269;
+  }
+  
