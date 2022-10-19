@@ -1,0 +1,108 @@
+/* * {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+  }
+  section {
+    margin: calc(50vh - 159px) auto;
+    width: 550px;
+    position: relative;
+    border: 1px dotted#000;
+  }
+   section::before {
+    position: absolute;
+    content: "";
+    inset: 30px 0 0 calc(50% - 0.5px);
+    width: 1px;
+    height: calc(100% - 60px);
+    background: rgb(3, 169, 244);
+  }
+section::after {
+    position: absolute;
+    content: "Or";
+    width: 25px;
+    inset: calc(50% - 12.5px);
+    font: normal 12px/25px sans-serif;
+    border-radius: 50%;
+    background: rgb(3, 169, 244);
+  }
+    div {
+    width: 210px;
+    height: 250px;
+    background: #eee;
+    position: relative;
+    display: inline-block;
+    padding: 1em 1.3em;
+    margin: 30px;
+  }
+ p {
+    width: 10.5rem;
+    position: absolute;
+    background: rgb(3, 169, 244);
+    border-radius: 8px;
+    font: bold 16px/2em sans-serif;
+  }
+   p:last-child {
+    background: #ddd;
+    color: #000;
+    border-radius: 50%;
+    bottom: 1.2rem;
+    font: normal 2rem/10.5rem sans-serif;
+  }  */
+
+ /* k.misbah  */
+ * {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+}
+section {
+  margin: calc(50vh - 159px) auto;
+  width: 550px;
+  position: relative;
+  border: 1px dotted#000;
+}
+section::before {
+  position: absolute;
+  content: "";
+  inset: 30px 0 0 calc(50% - 0.5px);
+  width: 1px;
+  height: calc(100% - 60px);
+  background: rgb(3, 169, 244);
+}
+section::after {
+  position: absolute;
+  content: "Or";
+  width: 25px;
+  inset: calc(50% - 12.5px);
+  font: normal 12px/25px sans-serif;
+  border-radius: 50%;
+  background: rgb(3, 169, 244);
+}
+div {
+  width: 210px;
+  height: 250px;
+  background: #eee;
+  position: relative;
+  display: inline-block;
+  padding: 1em 1.3em;
+  margin: 30px;
+}
+p {
+  width: 10.5rem;
+  position: absolute;
+  background: rgb(3, 169, 244);
+  border-radius: 8px;
+  font: bold 16px/2em sans-serif;
+}
+p:last-child {
+  background: #ddd;
+  color: #000;
+  border-radius: 50%;
+  bottom: 1.2rem;
+  font: normal 2rem/10.5rem sans-serif;
+}

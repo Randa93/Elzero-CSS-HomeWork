@@ -1,0 +1,25 @@
+div{
+    position: relative;
+        background: #eee;
+        width: 600px;
+        height: 60px;
+        margin: 20px auto;
+        text-align: center;
+        font: bolder 16px/60px sans-serif;
+}
+div::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+div span {
+    color:rgb(86, 9, 230);
+    position: absolute;
+    left: 1px;
+
+}

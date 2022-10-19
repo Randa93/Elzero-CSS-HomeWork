@@ -1,0 +1,11 @@
+div{
+    margin: 15px auto;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    background-color: grey;
+    font: bolder 16px/60px sans-serif;
+}
+:empty{
+    background-color: red;
+}

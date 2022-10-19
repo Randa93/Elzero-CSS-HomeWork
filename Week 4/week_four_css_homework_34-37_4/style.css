@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 15px auto;
+    background: #efefef;
+    width: 600px;
+    padding: 25px;
+    border-right: 10px #f44336 solid;
+    position: relative;
+    font: bolder 1.2em sans-serif;
+    counter-increment: numbers-counter;
+}
+
+p::before{
+    content: counter(numbers-counter);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: -75px;
+    background: #f44336;
+    width: 76px;
+    height: 72px;
+    color: white;
+    font: bolder 19px/77px sans-serif;
+    text-align: center;
+}
+
+
