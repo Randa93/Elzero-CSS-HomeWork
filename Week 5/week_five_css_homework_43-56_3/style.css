@@ -1,0 +1,37 @@
+.parent {/* margin-top&bottom 50vh - the default body margin 16px - half of the height 150px */
+    margin:calc(50vh - 166px) auto;
+    width: 600px;
+    height: 300px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.parent div {
+    background: #607d8b;
+    width: calc((100% - 120px) / 3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: inherit;
+    font-family: sans-serif;
+}  
+.one {
+    order: 6;
+    align-self: flex-end;  
+}
+.two {
+    order: 5;
+}
+.three {
+    order: 2;
+    align-self: flex-start;
+}
+.four {
+    order: 3;
+}
+.five {
+    order: 4;
+}

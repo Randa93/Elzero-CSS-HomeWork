@@ -1,0 +1,25 @@
+body {
+    height: calc(100vh - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    background: #eee;
+    display: flex; 
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap; 
+    padding: 15px;
+}
+.parent div {
+    background: #f44336;
+    width: calc((100% - 125px) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    padding: inherit;
+}

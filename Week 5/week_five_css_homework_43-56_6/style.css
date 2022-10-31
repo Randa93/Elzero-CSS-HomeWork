@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+  :root {
+    --Width: 100%;
+    --Height: 5vh;
+    --space: 0.625em;
+    --mainColor: #ddd;
+    --secColor: #eee;
+  }
+  body {
+    padding: var(--space);
+    background: var(--secColor);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+  }
+  header {
+    width: var(--Width);
+    min-height: var(--Height);
+    background: var(--secColor);
+    display: flex;
+    gap: var(--space);
+  }
+  header .logo {
+    width: 10%;
+    padding: var(--space);
+    background: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .links {
+    width: 90%;
+    padding: var(--space);
+    background: var(--mainColor);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: var(--space);
+  }
+  main {
+    width: var(--Width);
+    height: calc(90vh - var(--space) * 4);
+    background: var(--secColor);
+    display: flex;
+    justify-content: space-between;
+  }
+  main section {
+    width: 70%;
+    padding: var(--space);
+    background: var(--mainColor);
+  }
+  main aside {
+    width: calc(30% - var(--space));
+    padding: var(--space);
+    background: var(--mainColor);
+  }
+  footer {
+    width: var(--Width);
+    min-height: var(--Height);
+    background: var(--secColor);
+    display: flex;
+  }
+  footer .copyright {
+    width: 40%;
+    padding: var(--space);
+    background: var(--mainColor);
+    display: flex;
+    align-items: center;
+  }
+  footer .design {
+    width: 60%;
+    padding: var(--space);
+    background: var(--mainColor);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  

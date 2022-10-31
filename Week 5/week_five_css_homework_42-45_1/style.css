@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    font: bold 16px sans-serif;
+    text-align: center;
+  }
+  .parent {
+    width: 500px;
+    height: 300px;
+    margin: 200px auto;
+    background: #f2f2f4;
+    padding: 10px 25px;
+    transition: margin-top 0.5s;
+  }
+  .parent:hover {
+    margin-top: 150px;
+  }
+  .child {
+    background: #dededc;
+    width: 100%;
+    padding: 25px;
+    transition: margin-top 0.5s 0.5s;
+  }
+  .parent:hover .child {
+    margin-top: 40px;
+  }
+  
+  /* another solution */
+  /* * {
+    box-sizing: border-box;
+    font: bold 16px sans-serif;
+    text-align: center;
+  }
+  .parent {
+    width: 500px;
+    height: 300px;
+    margin: 200px auto;
+    background: #f2f2f4;
+    padding: 10px 25px;
+    transition: transform 0.5s;
+  }
+  .parent:hover {
+    transform: translateY(-50px);
+  }
+  .child {
+    background: #dededc;
+    width: 100%;
+    padding: 25px;
+    transition: transform 0.5s 0.5s;
+  }
+  .parent:hover .child {
+    transform: translateY(30px);
+  }
+   */
+  
