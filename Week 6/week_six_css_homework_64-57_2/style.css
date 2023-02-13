@@ -1,0 +1,119 @@
+/* Radwa */
+/*
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .layout {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+      "header header header header header header header"
+      "section section section section section aside aside"
+      "footer footer footer footer footer footer footer";
+  }
+  header {
+    grid-area: header;
+    background-color: #03a9f4;
+    position: relative;
+    padding: 15px;
+  }
+  header::before {
+    content: "Header";
+    color: white;
+    position: absolute;
+  }
+  section {
+    background-color: #ff5722;
+    grid-area: section;
+    position: relative;
+  }
+  section::before {
+    content: "Section";
+    color: white;
+    position: absolute;
+    padding: 15px;
+  }
+  aside {
+    background-color: #607d8b;
+    grid-area: aside;
+    position: relative;
+  }
+  aside::before {
+    content: "Aside";
+    color: white;
+    position: absolute;
+    padding: 15px;
+  }
+  footer {
+    background-color: #009688;
+    grid-area: footer;
+  }
+  footer::before {
+    content: "Footer";
+    color: white;
+    position: absolute;
+    padding: 15px;
+  }
+ */ 
+
+ /* k.mesbah */
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.layout {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template:
+    "header header" 1fr
+    "section aside" 20fr
+    "footer footer" 1fr
+    / 1fr 1fr;
+}
+header,
+section,
+aside,
+footer {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+header {
+  grid-area: header;
+  background-color: #03a9f4;
+}
+header::before {
+  content: "Header";
+}
+section {
+  grid-area: section;
+  background-color: #ff5722;
+}
+section::before {
+  content: "Section";
+}
+aside {
+  grid-area: aside;
+  background-color: #607d8b;
+}
+aside::before {
+  content: "Aside";
+}
+footer {
+  grid-area: footer;
+  background-color: #009688;
+}
+footer::before {
+  content: "Footer";
+}

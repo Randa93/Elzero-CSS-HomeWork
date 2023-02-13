@@ -1,4 +1,4 @@
-.parent {/* margin-top&bottom 50vh - the default body margin 16px - half of the height 150px */
+.parent {/*margin-top&bottom 50vh - the default body margin 16px - half of the height 150px */
     margin:calc(50vh - 166px) auto;
     width: 600px;
     height: 300px;

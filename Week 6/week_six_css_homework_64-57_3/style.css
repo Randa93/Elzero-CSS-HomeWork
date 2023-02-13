@@ -1,0 +1,64 @@
+/* Radwa */
+/*
+* {
+    box-sizing: border-box;
+  }
+  */
+  /* container */
+  /*.grid {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin:20px auto;
+    display: grid;
+    */
+  /*  numbers of colums  */
+    /* grid-template-columns: auto 1fr 1fr auto; */
+  /*  height of each row  */
+    /* grid-template-rows: 1fr auto;
+    gap: 15px;
+  } */
+  /*  inner divs */
+  /* .grid div {
+    background-color: #403f3f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+   */
+
+   /* k.mesbah */
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto repeat(2, 1fr) auto;
+    grid-template-rows: 1fr auto;
+  }
+  .grid div {
+    background-color: #403f3f;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
