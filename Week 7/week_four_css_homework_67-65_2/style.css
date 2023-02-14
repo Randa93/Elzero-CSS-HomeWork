@@ -1,0 +1,37 @@
+body {
+    height: calc(100vh - 16px);
+    display: grid;
+    place-content: center;
+    font: bolder 2.2em "Times New Roman", Times, serif;
+  }
+  div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
+  div::before,
+  div::after {
+    content: "";
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background: #0000;
+    border-radius: 50%;
+  }
+  div::before {
+    border: 10px solid#e91e63;
+    width: 200px;
+    height: 200px;
+    border-left-color: #ee0b1700;
+  }
+  div::after {
+    border: 10px solid#2196f3;
+    width: 220px;
+    height: 220px;
+    border-right-color: #0000;
+  }

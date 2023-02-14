@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+}
+div {
+  position: relative;
+  padding: 100px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+div::after,
+div::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backface-visibility:hidden;
+  display: grid;
+  place-content: center;
+  font:bold 2em sans-serif;
+  -webkit-backface-visibility:hidden;
+}
+div::before {
+  content: "Front";
+  background: #fa3664;
+}
+div::after {
+  content: "Back";
+  background: #1692fc;
+  transform: rotateY(180deg);
+}
+div:last-of-type::after {
+  transform: rotateX(180deg);
+}
+div:hover {
+  transform: rotateY(180deg);
+}
+div:last-of-type:hover {
+  transform: rotateX(180deg);
+}

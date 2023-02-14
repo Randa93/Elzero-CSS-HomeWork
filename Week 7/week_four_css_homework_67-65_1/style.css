@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  div {
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    color: #03a9f4;
+    margin: 40px auto;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    position: relative;
+  }
+  div::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #03a9f4;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+  div::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #e91e63;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}

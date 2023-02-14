@@ -1,0 +1,30 @@
+:root {
+    --clrPrimary: rgb(0 150 136);
+    --clrSecondary: white;
+  }
+  body {
+    height: calc(100vh - 16px);
+    display: grid;
+    place-content: center;
+  }
+  h1 {
+    width: 150px;
+    padding: 30px 80px 30px 120px;
+    background-color: var(--clrPrimary);
+    color: var(--clrSecondary);
+    position: relative;
+    display: grid;
+    place-content: center;
+    font: bolder 5em sans-serif;
+  }
+  h1::before {
+    content: "";
+    position: absolute;
+    left: -28px; 
+    width: 13%;
+    height: 100%;
+    transform: skewx(20deg); 
+    background-color: var(--clrPrimary);
+    border-right: 10px solid var(--clrSecondary);
+  }
+  
