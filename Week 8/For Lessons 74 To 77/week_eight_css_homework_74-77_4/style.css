@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  /* div that contain every thing */
+  .container {
+    background-color: transparent;
+    width: 135px;
+    height: 92px;
+  /*  contain 2columns and 1 row  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  /* the two columns of the container background-color */
+  .L,
+  .E {
+    background-color: #484848;
+  }
+  /* background-color of the divs that inside the columns of the container */
+  .L div,
+  .E div {
+    background-color: white;
+  }
+  /* left colunm (E) is in the container  */
+  .E {
+    display: grid;
+  /*  has 1 column and 2 rows  */
+    grid-template-columns: 43px;
+    grid-template-rows: repeat(2, 17px);
+    justify-content: flex-end;
+    align-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    position: relative;
+  }
+  /* the right column (L)is in the container */
+  .L {
+    display: grid;
+  /* has 2 columns and 1 row   */
+    grid-template-columns: 15px 29px;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+  /* right column in the right column of the container */
+  .L-right-column {
+    height: 83%;
+  }
+  /* each square */
+  .E-square,
+  .L-square {
+    width: 8px;
+    height: 8px;
+    background-color: #fea604;
+    position: absolute;
+  }
+  /* the square of E column */
+  .E-square {
+    top: 2px;
+    right: 2px;
+    animation-name: E-square;
+    animation-duration: 6s;
+    /* animation-delay: 2s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+  /* the square of L column */
+  .L-square {
+    bottom: 2px;
+    right: 2px;
+    animation-name: L-square;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+  }
+  /* animation of square in E  */
+  @keyframes E-square {
+    27% {
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+    }
+    45.25% {
+      transform: translate(-44px);
+      -webkit-transform: translate(-44px);
+      -moz-transform: translate(-44px);
+      -ms-transform: translate(-44px);
+      -o-transform: translate(-44px);
+    }
+    52.25% {
+      transform: translate(-44px, 29px);
+      -webkit-transform: translate(-44px, 29px);
+      -moz-transform: translate(-44px, 29px);
+      -ms-transform: translate(-44px, 29px);
+      -o-transform: translate(-44px, 29px);
+    }
+    59.25% {
+      transform: translate(0px, 29px);
+      -webkit-transform: translate(0px, 29px);
+      -moz-transform: translate(0px, 29px);
+      -ms-transform: translate(0px, 29px);
+      -o-transform: translate(0px, 29px);
+    }
+    66.25% {
+      transform: translate(-44px, 29px);
+      -webkit-transform: translate(-44px, 29px);
+      -moz-transform: translate(-44px, 29px);
+      -ms-transform: translate(-44px, 29px);
+      -o-transform: translate(-44px, 29px);
+    }
+    73.25% {
+      transform: translate(-44px, 58px);
+      -webkit-transform: translate(-44px, 58px);
+      -moz-transform: translate(-44px, 58px);
+      -ms-transform: translate(-44px, 58px);
+      -o-transform: translate(-44px, 58px);
+    }
+    80.25% {
+      transform: translate(0px, 58px);
+      -webkit-transform: translate(0px, 58px);
+      -moz-transform: translate(0px, 58px);
+      -ms-transform: translate(0px, 58px);
+      -o-transform: translate(0px, 58px);
+    }
+    87.25% {
+      transform: translate(-44px, 58px);
+      -webkit-transform: translate(-44px, 58px);
+      -moz-transform: translate(-44px, 58px);
+      -ms-transform: translate(-44px, 58px);
+      -o-transform: translate(-44px, 58px);
+    }
+    94.25% {
+      transform: translate(-44px);
+      -webkit-transform: translate(-44px);
+      -moz-transform: translate(-44px);
+      -ms-transform: translate(-44px);
+      -o-transform: translate(-44px);
+    }
+  
+    100% {
+      transform: translate(0px);
+      -webkit-transform: translate(0px);
+      -moz-transform: translate(0px);
+      -ms-transform: translate(0px);
+      -o-transform: translate(0px);
+    }
+  }
+  /* animation of square in L */
+  @keyframes L-square {
+    0% {
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+      opacity: 0;
+    }
+    30% {
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+      opacity: 0;
+    }
+    35% {
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translate(-29px, 0px);
+      -webkit-transform: translate(-29px, 0px);
+      -moz-transform: translate(-29px, 0px);
+      -ms-transform: translate(-29px, 0px);
+      -o-transform: translate(-29px, 0px);
+    }
+    45% {
+      transform: translate(-29px, -58px);
+      -webkit-transform: translate(-29px, -58px);
+      -moz-transform: translate(-29px, -58px);
+      -ms-transform: translate(-29px, -58px);
+      -o-transform: translate(-29px, -58px);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-29px, -58px);
+      -webkit-transform: translate(-29px, -58px);
+      -moz-transform: translate(-29px, -58px);
+      -ms-transform: translate(-29px, -58px);
+      -o-transform: translate(-29px, -58px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-29px, -58px);
+      -webkit-transform: translate(-29px, -58px);
+      -moz-transform: translate(-29px, -58px);
+      -ms-transform: translate(-29px, -58px);
+      -o-transform: translate(-29px, -58px);
+      opacity: 0;
+    }
+  }
+  

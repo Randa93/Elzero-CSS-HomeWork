@@ -1,0 +1,46 @@
+body {
+    height: calc(100vh - 16px);
+    display: grid;
+    place-items: center;
+}
+div {
+    position: relative;
+    padding: 25px;
+    border: 5px solid#24b4ff;
+    border-radius: 50%;
+    border-bottom-color: #0000;
+    animation: moving 1s linear infinite paused;
+}
+div::after,
+div::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: moving 1s linear infinite paused;
+}
+div::after {
+    top: -30%;
+    left: -30%;
+    padding: 35px;
+    border: 5px solid#fc9000;
+    border-bottom-color: #0000;
+    animation-duration: 2s;
+}
+div::before {
+    padding: 45px;
+    top: -50%;
+    left: -50%;
+    border: 5px solid#000;
+    border-bottom-color: #0000;
+    animation-duration: 3s;
+}
+div:hover,
+div:hover::after,
+div:hover::before {
+    animation-play-state: running;
+}
+@keyframes moving {
+    to {
+    transform: rotate(1turn);
+    }
+}

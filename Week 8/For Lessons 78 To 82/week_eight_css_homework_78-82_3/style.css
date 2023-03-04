@@ -1,0 +1,9 @@
+/* 1 */
+.parent:nth-child(2){
+    color:red;
+}
+    
+/* 2 */
+.baby:only-child {
+    color: red;
+}

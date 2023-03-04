@@ -1,0 +1,9 @@
+div:not(.no-need) :nth-last-of-type(2) {
+    color: red;
+}
+
+/* 
+body>:nth-child(2) :nth-child(4){
+    color:red;
+}
+*/

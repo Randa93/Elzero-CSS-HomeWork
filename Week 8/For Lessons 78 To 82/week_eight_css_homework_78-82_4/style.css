@@ -1,0 +1,13 @@
+/* 1 */
+body > [title]:not(.no-need) {
+    color: red
+}
+/* 2 */
+body > p + div + div ~ [title]:not(.no-need) {
+    color: red;
+}
+  /* 3 */
+ /* all but not first 3 or last 7 */ 
+body > *:not(:nth-child(-n + 3), :nth-child(n + 7)) {
+    color: red;
+}

@@ -1,0 +1,39 @@
+/* 1 */
+div:not(.no-need,.no-need-2) h3+div:nth-last-of-type(2):not(.no-need){
+    color:Red
+}
+
+/* 2 */
+div:first-of-type div:nth-of-type(2){
+    color:red
+}
+    
+/* 3 */
+:first-child > :nth-child(5){
+    color:red
+}
+    
+/* 4 */
+h3+div:nth-child(5):not(.no-need){
+    color:red
+}
+    
+/* 5 */
+h3 + div:nth-last-child(2):nth-child(5) {
+    color: red;
+}
+    
+/* 6 */
+h3 + h3 + div {
+    color: red;
+}
+    
+/* 7 */
+h3:nth-of-type(3) + div {
+    color: red;
+}
+    
+/* 8 */
+div:not(.no-need) > h3 + :nth-child(5):not(.no-need) {
+    color: red;
+}
